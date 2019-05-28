@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Styleguide</title>
+    <link rel="stylesheet" href="CSS/styleguide.css">
+</head>
+
+<body>
+   
+    <ul>
+      <li><a href="#logo">Logo</a></li>
+      <li><a href="#typografi">Typografi</a></li>
+      <li><a href="#farvepalette">Farvepalette</a></li>
+      <li><a href="#map">Interaktivt Kort</a></li>
+      <li><a href="#billede">Billedstil</a></li>
+      <li><a href="#knapper">Knapper</a></li>
+    </ul>
+    
+    <main>
+
+        <div>
+            <img class="logo" src="Billeder/Forsvaret-logo.png" alt="logo">
+            
+        </div>
+
+        <h1>Style guide for DAR
+        </h1><br>
+        <hr>
+        <a name="logo"><h2>Logo
+        </h2></a>
+        <h4>Logoet bliver brugt på alle sider. Det skal være synligt oppe i venstre hjørne.</h4> <br>
+        
+        <img class="logoBillede" src="Billeder/dar-logo.png" alt="logo">
+        <div class="kode-boks">
+            <p>
+               <b>HTML:</b>
+                <br>img class="dar" <br>src="Billeder/dar-logo.png" <br>alt="Det Danske Artilleriregiment logo"
+            <br><br><b>CSS:</b><br>{
+            <br>width: 45px; <br>
+            height: auto; <br>
+            float: left; <br>
+            margin: 8px 8px 8px 25px; <br>
+            min-width: 45px;
+            <br>}</p>
+       </div>
+        
+        <a name="typografi"><h2>Typografi
+        </h2></a>
+        <h4>Verdana bruges til både trykte og digitale medier, samt i underliggende myndigheders navnetræk.
+            <br> <br>
+            Typografien bruges i følgende skriftsnit: Bold, Regular og Italic.
+            <br> <br>
+            Verdana er en typografi uden fødder og er udviklet, så den har en god læsbarhed i små størrelser. Den egner sig derfor godt til både print og skærm. Verdana benyttes af mange, og som skrifttype er den derfor ikke identitetsbærende, men nærmest neutral i sit udtryk.
+        </h4>
+        <div>
+            <img class="verdanaBoks" src="Billeder/verdana-billed.PNG" alt="Font">
+        </div>
+        <h3>Generelt:</h3>
+        <div class="kode-boks">
+            <p>
+            {
+            <br>font-family: verdana, sans-serif;
+            <br>}
+            </p>
+        </div>
+        <h3>h1-tags</h3>
+        <div class="kode-boks">
+            <p>
+            {
+            <br>font-size: 2vw;
+            <br>}</p>
+        </div>
+        <h3>h2-tags</h3>
+        <div class="kode-boks">
+            <p>
+            {
+            <br>font-size: 1.6vw;
+            <br>}</p>
+        </div>
+        <h3>p-tags</h3>
+        <div class="kode-boks">
+            <p>
+            {
+            <br>font-size: 1vw;
+            <br>}</p>
+        </div>
+        <h4>Alle andre definationer af fonten er relativt i forhold til, hvad der skal laves.</h4>
+
+<a name="farvepalette"><h2>Farvepaletter
+        </h2></a>
+        <h4>Dette er hovedfarverne som er brugt til selve layoutet af det digitale platform.</h4>
+        <div>
+            <img class="farveBoks" src="Billeder/Color-pallette-DAR.png" alt="farvepalette">
+        </div>
+
+<a name="map"><h2>Interaktivt Map
+        </h2></a>
+        <h4>Kortet bruges på forsiden til computer version. Der skal kunne klikkes på et træ og så kommer der et lille info-skilt frem med den information, som passer til den tilhørende afskedige.</h4>
+        <img class="interactiveMap" src="Billeder/map.png" alt="Interaktivt kort">
+        <div class="kode-boks">
+            <p>
+            <b>HTML:</b>
+            <br>img class="map" src="Billeder/map.png" <br>alt="Kort over Mindelunden"
+            <br><br>
+            <b>CSS:</b>
+            <br>{
+            <br>height: 90vh;<br>
+            width: 100%;<br>
+            min-height: 44vw;
+            <br>}</p>
+        </div>
+        
+<a name="billede"><h2>Billedstil
+        </h2></a>
+        <h4>Der bliver brugt billeder på forskellige måder. Den ene måde fylder en del af en boks, hvor den anden fylder hele boksen, men har en mindre opacity.</h4>
+                        
+        <img class="billedeKasse1" src="Billeder/forsidebilledekasse1.PNG" alt="forsidekasse1">
+        <div class="kode-boks">
+            <p>
+            {
+            <br>width: 51%;<br>
+            float: left;<br>
+            border-right: solid;<br>
+            border-color: #000000;
+            <br>}</p>
+        </div>
+
+        <img class="billedeKasse1" src="Billeder/forsidebilledekasse2.PNG" alt="forsidekasse2">
+        <div class="kode-boks">
+            <p>
+            {
+            <br>width: 100%;<br>
+            height: 35.5vw;<br>
+            opacity: 0.3;
+            <br>}
+            </p>
+        </div>      
+        
+<a name="knapper"><h2>Knapper
+        </h2></a>
+        <h4>Vi bruger forskellige typer af knapper til forskellige elementer. Søgeknappen skal altid være øverst til højre ved siden af søge baren, på de sider, hvor man kan søge.</h4>
+        <div class="knap">
+            <img src="Billeder/search-knap.png" alt="Søgeknap">
+        </div>
+        <div class="kode-boks">
+            {
+            <br>border: solid;<br>
+            border-left-width: inherit;<br>
+            cursor: pointer;<br>
+            width: 4%;<br>
+            height: 6.9vh;<br>
+            min-width: 53px;<br>
+            min-height: 52px;<br>
+            float: right;<br>
+            margin-top: 11.5px;<br>
+            margin-right: 1%;
+            <br>}
+            </div>
+        <h4>Vi bruger knapper i navigationsbaren på 2 forskellige måder. Når den er aktiv og når den ikke er aktiv</h4>
+        <div class="knap">
+            <img src="Billeder/om-os-knap.png" alt="Om os knap">
+        </div>
+        <h3>Generelt</h3>
+        <div class="kode-boks">
+            <p>
+            {
+            <br>height: 10vh;<br>
+            float: left;<br>
+            width: 15%;<br>
+            border-right: solid;<br>
+            min-height: 75px;<br>
+            color: #000000;
+            <br>}
+            </p>
+        </div>
+        <h3>Hover</h3>
+        <div class="kode-boks">
+            <p>
+            {
+            <br>background-color: #555555; <br>
+            color: #FFFFFF;<br>
+            border-color: #000000;
+            <br>}
+            </p>
+        </div>
+        <h4>Når den er aktiv, skal den se sådan ud</h4>
+        <div class="knap">
+            <img src="Billeder/om-os-aktiv-knap.png" alt="Om os aktiv knap">
+        </div>
+        <div class="kode-boks">
+            <p>
+            {
+            <br>background-color: #555555;<br>
+            border-color: #000000;<br>
+            height: 10vh;<br>
+            float: left;<br>
+            width: 15%;<br>
+            border-right: solid;<br>
+            min-height: 75px;<br>
+            border-right-color: #000000;
+            <br>}
+            </p>
+        </div>
+        <h3>Tekst</h3>
+        <div class="kode-boks">
+            <p>
+            {
+            <br>padding: 11px;<br>
+            text-align: center;<br>
+            color: #FFFFFF;
+            <br>}
+            </p>
+        </div>
+        <h4>Vi har en knap, hvor når man trykker på den, skal den rulle videre til indholdet, som er nedenunder</h4>
+        <div class="knap">
+            <img class="pil-ned" src="Billeder/pil-ned.png" alt="Pil ned knap">
+        </div>
+        <div class="kode-boks">
+            <p>
+               .rul-ned <br><br>{<br>
+                text-align: center;<br>
+                }    
+                <br><br>
+                .rul-ned img <br><br>{<br>
+                display: inline-block;<br>
+                width: 90px;<br>
+                margin-top: -25px;<br>
+                cursor: pointer;<br>
+                } 
+            </p>
+        </div>
+        <h4>Vi bruger en call to action knap, som skal føre hen til henholdsvis en oversigt over de afskedige og en tilmelding til åbent hus.</h4>
+        <div class="knap">
+            <img src="Billeder/cta-knap.png" alt="Call to action knap">
+        </div>
+        <div class="kode-boks">
+            <p>
+            {
+            <br>width: 35%;<br>
+            position: relative;<br>
+            left: 7.25%;<br>
+            background-color: #C8102E;<br>
+            color: #FFFFFF;<br>
+            font-family: verdana, sans-serif;<br>
+            font-size: 1vw;<br>
+            border: solid;<br>
+            border-color: #000000;<br>
+            cursor: pointer;
+            <br>}
+            </p>
+        </div>
+        <h4>Vi har en anden call to action knap, som skal føre videre til mere information om den specifikke afskedige.</h4>
+        <div class="knap">
+            <img src="Billeder/cta-knap-info.png" alt="Call to action knap for mere viden om afskedig">
+        </div>
+        <div class="kode-boks">
+            <p>
+            {
+            <br>float: right;<br>
+            margin-right: 1%;<br>
+            margin-top: 1%;<br>
+            margin-bottom: 1%;<br>
+            color: #fff;<br>
+            background-color: #c8102e;<br>
+            font-family: Verdana, sans-serif;<br>
+            border: solid;<br>
+            border-color: #000;<br>
+            border-width: thin;<br>
+            cursor: pointer;
+            <br>}
+            </p>
+        </div>
+
+    </main>
+    <br>
+</body>
+
+</html>

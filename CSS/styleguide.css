@@ -1,0 +1,170 @@
+/* generel side
+ * 
+ */
+body {
+    background-color: #ECECEC;
+    font-family: Verdana, sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+
+main {
+    width: 75%;
+    float: right;
+    margin-right: 5%;
+}
+
+
+.logo {
+    width: 35%;
+}
+
+
+hr {
+    margin: auto;
+    margin-bottom: 4%;
+    margin-top: -2%;
+    display: block;
+    border-style: solid;
+    border-width: 2px;
+    color: #3f5b58;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #c8102e;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+h2 {
+    text-align: center;
+    color: #c8102e;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 0.5px black;
+
+}
+
+.typografi {
+    text-align: center;
+}
+
+/* farvepaletten
+ * 
+ */
+.farveBoks {
+    width: 55%;
+    margin-left: 23%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* typografi billede
+ * 
+ */
+.verdanaBoks {
+    width: 55%;
+    margin-left: 23%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.billedeKasse1 {
+    width: 55%;
+    margin-left: 23%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.logoBillede{
+    width: 20%;
+    margin-top: 20px;
+    margin-bottom: 2%;
+    margin-left: 40%;
+}
+
+.interactiveMap {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10%;
+    padding: 0;
+    width: 14.3%;
+    background-color: #ECECEC;
+    float: left;
+    font-style: italic;
+    position: fixed;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 1.5vw;
+
+
+}
+
+li a.active {
+    background-color: #c8102e;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #c8102e;
+    color: white;
+}
+
+ul {
+    border: 1px solid #000000;
+}
+
+li {
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+
+
+/*kode om CSS til de forskellige elementer*/
+
+
+
+.kode-boks {
+    width: 30%;
+    margin: 0 auto;
+    border: solid;
+    margin-bottom: 5%;
+    padding: 1%;
+}
+h3 {
+    text-align: center;
+    margin: 0 auto;
+}
+h4 {
+    text-align: center;
+    font-weight: 300;
+}
+.knap {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.pil-ned {
+    width: 20%;
+}

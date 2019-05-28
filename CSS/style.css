@@ -1,0 +1,988 @@
+body {
+    margin: 0;
+    background-color: #ECECEC;
+    font-family: verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+
+/*Kodning for topbar */
+
+
+
+.topbar {
+    height: 10vh;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 2px;
+    border-color: #000000;
+    min-height: 75px;
+    position: fixed;
+    background-color: #ECECEC;
+    z-index: 1;
+}
+
+.dar {
+    width: 45px;
+    height: auto;
+    float: left;
+    margin: 8px 8px 8px 25px;
+    min-width: 45px;
+
+}
+
+.topbar h1 {
+    margin: 7px;
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+    padding: 12px;
+    color: #000000;
+    min-width: 100px;
+}
+
+.logo {
+    border-right: solid;
+    border-color: #000000;
+    height: 10vh;
+    width: 18%;
+    float: left;
+    min-width: 273px;
+    min-height: 75px;
+}
+
+.t-med {
+    height: 10vh;
+    float: left;
+    width: 18%;
+    border-right: solid;
+    min-height: 75px;
+    color: #000000;
+}
+
+.t-med:hover {
+    background-color: #555555;
+    color: #FFFFFF;
+    border-color: #000000;
+}
+
+.t-med p {
+    text-align: center;
+}
+.t-med-aktiv {
+    height: 10vh;
+    float: left;
+    width: 18%;
+    border-right: solid;
+    min-height: 75px;
+    color: #FFFFFF;
+    background-color: #555555;
+    border-color: #000000;
+}
+.t-med-aktiv p {
+    text-align: center;
+}
+
+.om-os {
+    height: 10vh;
+    float: left;
+    width: 15%;
+    border-right: solid;
+    min-height: 75px;
+    color: #000000;
+}
+
+.om-os:hover {
+    background-color: #555555;
+    color: #FFFFFF;
+    border-color: #000000;
+}
+
+.om-os-aktiv {
+    background-color: #555555;
+    border-color: #000000;
+    height: 10vh;
+    float: left;
+    width: 15%;
+    border-right: solid;
+    min-height: 75px;
+    border-right-color: #000000;
+}
+
+.om-os-aktiv p {
+    padding: 11px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.om-os p {
+    padding: 11px;
+    text-align: center;
+}
+
+.kontakt {
+    height: 10vh;
+    float: left;
+    width: 15%;
+    border-right: solid;
+    min-height: 75px;
+    border-color: #000000;
+    color: #000000;
+}
+
+.kontakt:hover {
+    background-color: #555555;
+    color: #FFFFFF;
+    border-color: #000000;
+}
+
+.kontakt-aktiv {
+    height: 10vh;
+    float: left;
+    width: 15%;
+    border-right: solid;
+    min-height: 75px;
+    background-color: #555555;
+    color: #FFFFFF;
+    border-color: #000000;
+}
+
+.kontakt-aktiv p {
+    padding: 11px;
+    text-align: center;
+}
+
+.kontakt p {
+    padding: 11px;
+    text-align: center;
+}
+
+.topbar input {
+    padding: 10px;
+    border: solid;
+    font-size: 1.4em;
+    float: right;
+    width: 10%;
+    min-height: 18px;
+    margin-top: 11.5px;
+    font-family: verdana, sans-serif;
+}
+
+.topbar button img {
+    width: 60%;
+    margin: 20%;
+    float: left;
+    min-width: 40%;
+    min-height: 18px;
+}
+
+.topbar button {
+    border: solid;
+    border-left-width: inherit;
+    cursor: pointer;
+    width: 4%;
+    height: 6.9vh;
+    min-width: 53px;
+    min-height: 52px;
+    float: right;
+    margin-top: 11.5px;
+    margin-right: 1%;
+}
+.burger {
+    display: none;
+}
+#respLinks {
+    display: none;
+}
+.respTidlDiv {
+    display: none;
+}
+.respOmDiv {
+    display: none;
+}
+.respKontaktDiv {
+    display: none;
+}
+
+@media screen and (min-width: 1398px) {
+    .topbar input {
+        width: 24%;
+    }
+}
+
+@media screen and (max-width: 1398px) {
+    .topbar input {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .topbar input {
+        width: 10%;
+    }
+}
+
+
+
+/*Kode om main*/
+
+
+
+.map {
+    height: 90vh;
+    width: 100%;
+    min-height: 44vw;
+}
+
+.rul-ned {
+    text-align: center;
+}
+
+.rul-ned img {
+    display: inline-block;
+    width: 90px;
+    margin-top: -25px;
+    cursor: pointer;
+}
+
+.oversigt {
+    background-color: #597E50;
+    width: 40%;
+    height: 15vw;
+    margin-left: 5%;
+    margin-top: 5%;
+    border: solid;
+    float: left;
+}
+
+.oversigt img {
+    width: 51%;
+    float: left;
+    border-right: solid;
+    border-color: #000000;
+}
+
+.oversigt-tekst {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.oversigt button {
+    width: 35%;
+    position: relative;
+    left: 7.25%;
+    background-color: #C8102E;
+    color: #FFFFFF;
+    font-family: verdana, sans-serif;
+    font-size: 1vw;
+    border: solid;
+    border-color: #000000;
+    cursor: pointer;
+    padding: 2%;
+}
+
+.o-hus {
+    background-color: #597E50;
+    width: 40%;
+    height: 15vw;
+    margin-left: 5%;
+    margin-top: 5%;
+    border: solid;
+    float: left;
+}
+
+.o-hus img {
+    width: 51%;
+    float: left;
+    border-right: solid;
+    border-color: #000000;
+    height: 15vw;
+}
+
+.o-hus-tekst {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5vw;
+    margin: 5% 5% 0 55%;
+}
+
+.o-hus button {
+    width: 35%;
+    position: relative;
+    left: 7.25%;
+    background-color: #C8102E;
+    color: #FFFFFF;
+    font-family: verdana, sans-serif;
+    font-size: 1vw;
+    border: solid;
+    border-color: #000000;
+    cursor: pointer;
+    margin-top: 7%;
+    padding: 2%;
+}
+
+.main-nede {
+    height: 44.5vw;
+}
+
+.info {
+    background-color: #597E50;
+    width: 40%;
+    height: 35.25vw;
+    border: solid;
+    float: right;
+    margin-top: 5%;
+    margin-right: 5%;
+    position: relative;
+    text-align: center;
+}
+
+.info img {
+    width: 100%;
+    height: 35.5vw;
+    opacity: 0.3;
+}
+
+.info p {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+
+
+/*Kodning for om os*/
+
+
+
+.om-os-main img {
+    width: 30%;
+    margin-top: 10%;
+    margin-left: 5%;
+    float: left;
+    border: solid;
+    border-color: #000000;
+}
+
+.link-boks {
+    background-color: #FFFFFF;
+    float: left;
+    clear: left;
+    border: solid;
+    border-color: #000000;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 20%;
+}
+
+.link-boks p {
+    padding-left: 5%;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.om-os-tekst {
+    float: right;
+    width: 60%;
+}
+
+.om-os-tekst h1 {
+    margin-top: 15.9%;
+    font-size: 1.6vw;
+}
+
+.om-os-tekst h2 {
+    font-size: 1.6vw;
+}
+
+.om-os-tekst p {
+    font-size: 1vw;
+    padding-right: 5%;
+    margin-bottom: 7.5%;
+}
+
+
+
+/*Kode om kontakt*/
+
+
+
+.kontakt-opl {
+    background-color: #FFFFFF;
+    float: left;
+    border: solid;
+    border-color: #000000;
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 20%;
+}
+
+.kontakt-opl p {
+    padding-left: 5%;
+    font-size: 1vw;
+}
+
+.kontakt-underline {
+    text-decoration: underline;
+    font-size: 1.2vw;
+}
+
+.rettelser {
+    background-color: #FFFFFF;
+    border: solid;
+    border-color: #000000;
+    margin-top: 10%;
+    margin-right: 5%;
+    width: 50%;
+    float: right;
+}
+
+.rettelser h2 {
+    text-align: center;
+    font-size: 2vw;
+}
+
+.rettelser p {
+    text-align: center;
+    padding: 0 5% 2% 5%;
+    font-size: 1vw;
+}
+
+.rettelser label {
+    margin-left: 5%;
+    margin-top: 3%;
+    font-weight: 600;
+    font-size: 1vw;
+    float: left
+}
+
+.rettelser input {
+    width: 74%;
+    padding: 1%;
+    font-family: verdana, sans-serif;
+    margin-bottom: 3%;
+    font-style: italic;
+    float: right;
+    border: solid;
+    border-color: #000000;
+    margin: 2% 5% 2% 2%;
+    font-size: 1vw;
+}
+
+.rettelser textarea {
+    width: 74%;
+    padding: 1%;
+    font-family: verdana, sans-serif;
+    margin-bottom: 3%;
+    font-style: italic;
+    float: right;
+    border: solid;
+    border-color: #000000;
+    margin: 2% 5% 2% 2%;
+    height: 15vh;
+    font-size: 1vw;
+}
+
+#e-mail {
+    margin-top: 5%;
+}
+
+#textarea {
+    margin-top: 6%;
+}
+
+#submit {
+    margin-right: 5%;
+    margin-bottom: 4%;
+    width: 20%;
+    background-color: #597E50;
+    color: #FFFFFF;
+    border: solid;
+    border-color: #000000;
+    cursor: pointer;
+    width: 30%;
+    padding: 1%;
+    font-family: verdana, sans-serif;
+    font-style: italic;
+    float: right;
+    font-size: 1vw;
+}
+
+#submitSendt {
+    background-color: #597E50;
+    width: 15%;
+    height: 5vw;
+    float: right;
+    border: solid;
+    color: #FFFFFF;
+    border-color: #000000;
+    transform: translate(215%, 497%);
+    text-align: center;
+    display: none;
+}
+
+#submitSendt p {
+    margin-top: 12%;
+    font-size: 1vw;
+}
+
+.tidl-med-header {
+    font-size: 2.5vw;
+    margin-top: 9%;
+    display: inline-block;
+}
+
+.tidl-med-containr {
+    text-align: center;
+    width: 100%;
+}
+
+.info-person-box {
+    float: left;
+    width: 25%;
+    height: auto;
+    border: solid;
+    margin-left: 5.9%;
+    background-color: #ffffff;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.info-person-box img {
+    float: left;
+    width: inherit;
+    height: inherit;
+    border-right: solid;
+    background-color: rgba(89, 126, 80, 0.3);
+}
+
+.info-person-text {
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    float: left;
+    font-family: Verdana, sans-serif;
+}
+
+.readMoreBtn {
+    float: right;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: #fff;
+    background-color: #c8102e;
+    font-family: Verdana, sans-serif;
+    border: solid;
+    border-color: #000;
+    border-width: thin;
+    cursor: pointer;
+}
+
+#sorterBtn {
+    width: 11%;
+    float: right;
+    clear: right;
+    margin-right: 6.4%;
+    margin-top: -5%;
+    cursor: pointer;
+}
+#sorterOverlay {
+    width: 8.5%;
+    height: 10vh;
+    background-color: #fff;
+    border: solid;
+    padding: 1%;
+    text-align: right;
+    position: absolute;
+    margin-left: 82.8%;
+    margin-top: -3.5%;
+    line-height: 1.5;
+    display: none;
+}
+#sorterBtn img {
+    width: 11%;
+    height: auto;
+    float: right;
+    clear: both;
+}
+#infoOverlay {
+    width: 80%;
+    height: 37vw;
+    background-color: #fff;
+    margin: 10%;
+    position: absolute;
+    z-index: 0;
+    border: solid;
+    display: none;
+}
+.soldat-billede {
+    float: left;
+    background-color: rgba(89, 126, 80, 0.3);
+    margin: 4%;
+    border: solid;
+    width: 21.1%;
+}
+.overlay-text {
+    float: left;
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 2.5%;
+    font-size: 1vw;
+}
+.info-lillebox {
+    border: solid;
+    width: 21.1%;
+    height: 12.7vw;
+    float: left;
+    clear: left;
+    margin-top: -3%;
+    margin-left: 4%;
+    text-align: center;
+}
+#smallBox {
+    font-weight: 300;
+    margin: 4%;
+    font-size: 1vw;
+}
+#largeBox {
+    font-weight: 300;
+    margin: 4%;
+    font-size: 1vw;
+}
+.info-bigbox {
+    border: solid;
+    width: 60%;
+    height: 20vw;
+    float: right;
+    margin-top: -12.2%;
+    margin-right: 9%;
+    text-align: center;
+}
+#red_x {
+    width: 4vw;
+    background-color: white;
+    height: 4vw;
+    float: right;
+    border: none;
+}
+#red_x_btn {
+    background-color: white;
+    width: 6.5%;
+    float: right;
+    clear: right;
+    margin: 1%;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/*Kode til skalerbarhed af ipad og mobil*/
+
+
+
+@media screen and (max-width: 930px) {
+    .t-med {
+        display: none;
+    }
+    .om-os {
+        display: none;
+    }
+    .kontakt {
+        display: none;
+    }
+    .topbar input {
+        display: none;
+    }
+    .search {
+        visibility: hidden;
+    }
+    .map {
+        display: none;
+    }
+    .om-os-aktiv {
+        display: none;
+    }
+    .kontakt-aktiv {
+        display: none;
+    }
+    .om-os-main img {
+        width: 70%;
+        margin-top: 17%;
+        margin-left: 15%;
+    }
+    .link-boks {
+        margin-left: 15%;
+        width: 70%;
+        margin-top: 0;
+        margin-bottom: 5%;
+    }
+
+    .link-boks p {
+        padding-left: 5%;
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    .om-os-tekst {
+        width: 70%;
+        margin-right: 15%;
+        text-align: center;
+    }
+
+    .om-os-tekst h1 {
+        margin-top: 10%;
+        font-size: 2vw;
+    }
+
+    .om-os-tekst h2 {
+        font-size: 2vw;
+    }
+
+    .om-os-tekst p {
+        font-size: 2vw;
+        padding-right: 5%;
+        margin-bottom: 10%;
+    }
+    
+    
+    .rettelser {
+        margin-top: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+
+    .rettelser h1 {
+        font-size: 2vw;
+    }
+
+    .rettelser p {
+        font-size: 2vw;
+    }
+
+    .rettelser label {
+        font-size: 2vw;
+    }
+
+    .rettelser input {
+        width: 72%;
+        font-size: 2vw;
+    }
+
+    .rettelser textarea {
+        width: 72%;
+        font-size: 2vw;
+    }
+    #submit {
+        font-size: 2vw;
+    }
+    #submitSendt {
+        width: 30%;
+        height: 10vw;
+        border-color: #000000;
+        transform: translate(-120%, -300%);
+    }
+
+    #submitSendt p {
+        font-size: 2vw;
+    }
+    .kontakt-opl {
+        margin-left: 9.5%;
+        width: 80%;
+        margin-top: 17%;
+    }
+
+    .kontakt-opl p {
+        padding-left: 0;
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    #kontakt-underline {
+        font-size: 2vw;
+    }
+    
+    .tidl-med-header {
+        margin-top: 17%;
+    }
+
+    .info-person-box {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .info-person-text {
+        margin-left: 52%;
+        margin-top: 2%;
+        float: none;
+        font-size: 1.8vw;
+    }
+
+    .readMoreBtn {
+        margin-top: 24%;
+    }
+    #sorterOverlay {
+        text-align: right;
+        position: absolute;
+        margin-left: 82.6%;
+        margin-top: -1%;
+        line-height: 1.5;
+        font-size: 1.5vw;
+    }
+    #infoOverlay {
+        height: 100vw;
+        margin-top: 17%;
+    }
+    .soldat-billede {
+        margin-left: 30%;
+        width: 40%;
+    }
+    .overlay-text {
+        margin-top: -5%;
+        font-size: 2vw;
+        margin-left: 38%; 
+        margin-bottom: 2%;
+    }
+    .info-lillebox {
+        width: 40%;
+        height: 12.7vw;
+        margin-top: 0;
+        margin-left: 30%;
+    }
+    #smallBox {
+        font-weight: 300;
+        margin: 4%;
+        font-size: 2vw;
+    }
+    #largeBox {
+        font-size: 2vw;
+    }
+    .info-bigbox {
+        width: 60%;
+        margin-top: 2%;;
+        margin-right: 20%;
+    }
+    
+    .burger {
+        display: block;
+        width: 7vw;
+        min-width: 64px;
+        float: right;
+        margin-right: -6%;
+        height: 7vw;
+        min-height: 65px;
+        margin-top: 0.5%;
+        cursor: pointer;
+    }
+    
+    #respLinks {
+        margin-top: 75px;
+    }
+    #respLinks a {
+        color: #000000;
+        background-color: #ECECEC;     
+        padding: 14px 16px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        clear: right;
+    }
+    .respTidlDiv {
+        border-top: solid;
+        text-decoration: none;
+    }
+    .respOmDiv {
+        border-top: solid;
+        border-bottom: solid;
+        text-decoration: none;
+    }
+    .respKontaktDiv {
+        border-bottom: solid;
+        text-decoration: none;
+    }
+    .respOmDivAktiv {
+        text-decoration: underline;
+    }
+    .respKontaktDivAktiv {
+        text-decoration: underline;
+    }
+    .respTidlDivAktiv {
+        text-decoration: underline;
+    }
+    .t-med-aktiv {
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    .oversigt {
+    background-color: #597E50;
+    width: 60%;
+    height: 22.6vw;
+    margin-left: 20%;
+    margin-top: 5%;
+    border: solid;
+    float: left;
+    }
+
+    .oversigt-tekst {
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    .oversigt button {
+        font-size: 2vw;
+    }
+    
+    .o-hus {
+        width: 60%;
+        height: 22.6vw;
+        margin-left: 20%;
+        margin-bottom: 5%;
+    }
+
+    .o-hus img {
+        height: 22.5vw;
+    }
+
+    .o-hus-tekst {
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 2vw;
+        margin: 5% 5% 0 55%;
+    }
+
+    .o-hus button {
+        font-size: 2vw;
+        margin-top: 5%;
+    }
+    .info {
+        width: 60%;
+        margin-right: 19%;
+    }
+    .info p {
+        font-size: 2vw;
+    }
+    #submitSendt {
+        transform: translate(-100%, -400%);
+    }
+    #sorterBtn img {
+        display: none;
+    }
+    #sorterOverlay {
+        margin-top: 2.9%;
+    }
+}

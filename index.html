@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Mindelunden - Det Danske Artilleriregiment</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="Billeder/favicon.png">
+    <script src="javascript/main.js" defer></script>
+</head>
+
+<body>
+    <nav class="topbar">
+        <a href="index.html">
+            <div class="logo">
+                <img class="dar" src="Billeder/dar-logo.png" alt="Det Danske Artilleriregiment logo">
+                <h1>Det Danske <br> Artilleriregiment</h1>
+            </div>
+        </a>
+        <a href="html/tidl-medarbjeder.html">
+            <div class="t-med">
+                <p>Tidligere <br> medarbejdere</p>
+            </div>
+        </a>
+        <a href="html/om-os.html">
+            <div class="om-os">
+                <p>Om os</p>
+            </div>
+        </a>
+        <a href="html/kontakt.html">
+            <div class="kontakt">
+                <p>Kontakt</p>
+            </div>
+        </a>
+        <div>
+
+            <button class="search" type="submit"><img src="Billeder/search.png" alt="Søg"></button>
+
+            <input type="text" placeholder="Søg...">
+
+        </div>
+        
+        <div>
+            <img onclick="respNav()" class="burger" src="Billeder/hamburger-icon.png" alt="Hamburger ikon">
+        </div>
+        
+        <div id="respLinks">
+            <a class="respTidlDiv" href="html/tidl-medarbjeder.html">Tidligere medarbejdere</a>
+            <a class="respOmDiv" href="html/om-os.html">Om os</a>
+            <a class="respKontaktDiv" href="html/kontakt.html">Kontakt</a>
+        </div>
+    </nav>
+
+    <main>
+        <img class="map" src="Billeder/map.png" alt="Kort over Mindelunden">
+        <div class="rul-ned">
+           <a href="#scroll"> <img src="Billeder/pil-ned.png" alt="Pil ned "></a>
+        </div>
+
+        <div class="main-nede">
+            <div class="oversigt">
+                <img src="Billeder/main-mindelunden-oversigt.jpg" alt="Mindelunden">
+                <p class="oversigt-tekst">Alle afskedige medarbejdere har plantet et træ i Mindelunden</p>
+                <form method="get" action="html/tidl-medarbjeder.html">
+                    <button type="submit">
+                        Se oversigt her
+                    </button>
+                </form>
+            </div>
+
+           <a name="scroll" > 
+               <div class="info">
+                    <img src="Billeder/mindelund.png" alt="">
+                    <p>Oksbøl Kaserne er en dansk militærlejr oprettet i 1929 med navnet Oksbøllejren , opkaldt efter den nærliggende by Oksbøl. Oksbøllejren skiftede 1. januar 2019 navn til Oksbøl Kaserne. <br><br>Når en person tager afsked fra regimentet, planter vedkommende et egetræ i Mindelunden. Dette skal minde pårørende om deres tid i regimentet.</p>
+                </div>
+            </a>
+            <div class="o-hus">
+                <img src="Billeder/open-house.jpg" alt="Åbent hus">
+                <p class="o-hus-tekst">Åbent hus på Oksbøl Kaserne 23. Juni 2019.</p>
+                <button type="submit">
+                    Tilmeld dig her
+                </button>
+            </div>
+
+
+        </div>
+
+    </main>
+</body>
+
+</html>

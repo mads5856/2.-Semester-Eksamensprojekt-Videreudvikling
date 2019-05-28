@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Mindelunden - Kontakt os</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="../Billeder/favicon.png">
+    <script src="../javascript/main.js" defer></script>
+</head>
+
+<body>
+    <nav class="topbar">
+        <a href="../index.html">
+            <div class="logo">
+                <img class="dar" src="../Billeder/dar-logo.png" alt="Det Danske Artilleriregiment logo">
+                <h1>Det Danske <br> Artilleriregiment</h1>
+            </div>
+        </a>
+        <a href="tidl-medarbjeder.html">
+            <div class="t-med">
+                <p>Tidligere <br> medarbejdere</p>
+            </div>
+        </a>
+        <a href="../html/om-os.html">
+            <div class="om-os">
+                <p>Om os</p>
+            </div>
+        </a>
+        <a href="kontakt.html">
+            <div class="kontakt-aktiv">
+                <p>Kontakt</p>
+            </div>
+        </a>
+        <div>
+
+            <button class="search" type="submit"><img src="../Billeder/search.png" alt="Søg"></button>
+
+            <input type="text" placeholder="Søg...">
+
+        </div>
+        <div>
+            <img onclick="respNav()" class="burger" src="../Billeder/hamburger-icon.png" alt="Hamburger ikon">
+        </div>
+        
+        <div id="respLinks">
+            <a class="respTidlDiv" href="../html/tidl-medarbjeder.html">Tidligere medarbejdere</a>
+            <div>
+                 <a class="respOmDiv" href="../html/om-os.html">Om os</a>
+            </div>
+            <div class="respKontaktDivAktiv">
+                <a class="respKontaktDiv" href="../html/kontakt.html">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="kontakt-opl">
+            <p class="kontakt-underline">Kontaktoplysninger:</p>
+            <p>DAR-LE01@MIL.DK</p>
+            <p>Tlf. nr.: +45 72 83 95 00</p>
+            <br>
+            <p class="kontakt-underline">Adresse:</p>
+            <p>Danske Artilleriregiment</p>
+            <p>Grærup Havvej 2</p>
+            <p>6840 Oksbøl</p>
+        </div>
+
+        <div class="rettelser">
+            <h2>Har vi skrevet noget forkert?</h2>
+            <p>Herunder kan du skrive til os, hvis du har fundet en fejl i oplysningerne om en af dine bekendte, eller hvis du har nogle gode historier fra deres tid i Det Danske Artilleriregiment.</p>
+            <form>
+                <label>Dit navn:</label>
+                <input type="text" name="name" placeholder="Skriv dit navn her...">
+
+                <label id="e-mail">E-mail:</label>
+                <input type="email" name="e-mail" placeholder="Skriv din e-mail her...">
+
+                <label id="textarea">Rettelse:</label>
+                <textarea name="rettelser" placeholder="Skriv din rettelse, historie eller kommentar her..."></textarea>
+
+                <button onclick="show()" id="submit">Send</button>
+            </form>
+        </div>
+
+        <div id="submitSendt">
+            <p>Din besked er sendt!</p>
+        </div>
+
+    </main>
+</body>
+
+</html>
