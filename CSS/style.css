@@ -275,8 +275,8 @@ html {
     width: 35%;
     position: relative;
     left: 7.25%;
-    background-color: #C8102E;
-    color: #FFFFFF;
+    background-color: rgba(200, 16, 46, 0.6);
+    color: #fff;
     font-family: verdana, sans-serif;
     font-size: 1vw;
     border: solid;
@@ -284,7 +284,10 @@ html {
     cursor: pointer;
     padding: 2%;
 }
-
+.oversigt button:hover {
+    background-color: rgb(200, 16, 46);
+    color: #fff;
+}
 .o-hus {
     background-color: #597E50;
     width: 40%;
@@ -314,8 +317,8 @@ html {
     width: 35%;
     position: relative;
     left: 7.25%;
-    background-color: #C8102E;
-    color: #FFFFFF;
+    background-color: rgba(200, 16, 46, 0.6);
+    color: #fff;
     font-family: verdana, sans-serif;
     font-size: 1vw;
     border: solid;
@@ -324,7 +327,10 @@ html {
     margin-top: 7%;
     padding: 2%;
 }
-
+.o-hus button:hover {
+    background-color: rgb(200, 16, 46);
+    color: #fff;
+}
 .main-nede {
     height: 44.5vw;
 }
@@ -505,8 +511,8 @@ html {
     margin-right: 5%;
     margin-bottom: 4%;
     width: 20%;
-    background-color: #597E50;
-    color: #FFFFFF;
+    background-color: rgba(89, 126, 80, 0.3);
+    color: #000;
     border: solid;
     border-color: #000000;
     cursor: pointer;
@@ -517,7 +523,10 @@ html {
     float: right;
     font-size: 1vw;
 }
-
+#submit:hover {
+    background-color: rgb(89, 126, 80);
+    color: #fff;
+}
 #submitSendt {
     background-color: #597E50;
     width: 15%;
@@ -535,6 +544,8 @@ html {
     margin-top: 12%;
     font-size: 1vw;
 }
+
+/* Kode om tidl. medarbejdere */
 
 .tidl-med-header {
     font-size: 2.5vw;
@@ -579,15 +590,18 @@ html {
     margin-right: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
-    color: #fff;
-    background-color: #c8102e;
+    color: #000;
+    background-color: rgba(200, 16, 46, 0.3);
     font-family: Verdana, sans-serif;
     border: solid;
     border-color: #000;
     border-width: thin;
     cursor: pointer;
 }
-
+.readMoreBtn:hover {
+    background-color: rgb(200, 16, 46);
+    color: #fff;
+}
 #sorterBtn {
     width: 11%;
     float: right;
@@ -624,6 +638,22 @@ html {
     z-index: 0;
     border: solid;
     display: none;
+}
+.rettelseLink {
+    float: right;
+    margin-right: 10.5%;
+    margin-top: -5%;
+    background-color: rgba(89, 126, 80, 0.3);
+    color: #000;
+    width: 20%;
+    text-align: center;
+    padding: 1%;
+    border: solid 2px #000;
+}
+.rettelseLink:hover {
+    background-color: rgb(89, 126, 80);
+    color: #fff;
+    
 }
 .soldat-billede {
     float: left;
