@@ -242,18 +242,11 @@ html {
     margin-top: -39%;
 }
 
-.tree1:hover {
+.tree:hover {
     cursor: pointer;
     fill: #c8102e;
 }
 
-
-/*.map {
-    height: 90vh;
-    width: 100%;
-    min-height: 44vw;
-}
-*/
 
 .rul-ned {
     text-align: center;
