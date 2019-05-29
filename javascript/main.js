@@ -85,3 +85,32 @@ function respNav() {
         respLinks.style.display = "none";
     }
 }
+
+
+//Kode til SVG
+
+
+function hideOverlayForside() {
+    document.getElementById("forsideOverlay").style.display = "none"; 
+}
+
+function profil1Forside() {    
+    document.getElementById("forsideOverlay").style.display = "block";
+    document.getElementById("navn").innerHTML = "Navn:" + " " + medarbejderInfo[0][0];
+    document.getElementById("rang").innerHTML = "Rang:" + " " + medarbejderInfo[0][1];
+    document.getElementById("year").innerHTML = "Pensioneret:" + " " + medarbejderInfo[0][2];
+    document.getElementById("treeNum").innerHTML = "Træ nr.:" + " " + medarbejderInfo[0][3];
+    document.getElementById("smallBox").innerHTML = "Her skal der f.eks. stå en kort historie om" + " " + medarbejderInfo[0][0] + ", " + "eller et citat fra ham.";
+    document.getElementById("largeBox").innerHTML = "Her skal der stå mere information om" + " " + medarbejderInfo[0][0] + ", " + "og deres tid og bedrifter i regimentet.";
+}
+
+
+function profil2() {    
+    document.getElementById("infoOverlay").style.display = "block";
+    document.getElementById("navn").innerHTML = "Navn:" + " " + medarbejderInfo[1][0];
+    document.getElementById("rang").innerHTML = "Rang:" + " " + medarbejderInfo[1][1];
+    document.getElementById("year").innerHTML = "Pensioneret:" + " " + medarbejderInfo[1][2];
+    document.getElementById("treeNum").innerHTML = "Træ nr.:" + " " + medarbejderInfo[1][3];
+    document.getElementById("smallBox").innerHTML = "Her skal der f.eks. stå en kort historie om" + " " + medarbejderInfo[1][0] + ", " + "eller et citat fra ham.";
+    document.getElementById("largeBox").innerHTML = "Her skal der stå mere information om" + " " + medarbejderInfo[1][0] + ", " + "og deres tid og bedrifter i regimentet.";
+}

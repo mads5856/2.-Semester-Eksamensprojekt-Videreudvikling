@@ -230,12 +230,30 @@ html {
 /*Kode om main*/
 
 
+#forsideOverlay {
+    width: 80%;
+    height: 37vw;
+    background-color: #fff;
+    margin: 10%;
+    position: absolute;
+    z-index: 4;
+    border: solid;
+    display: none;
+    margin-top: -39%;
+}
 
-.map {
+.tree1:hover {
+    cursor: pointer;
+    fill: #c8102e;
+}
+
+
+/*.map {
     height: 90vh;
     width: 100%;
     min-height: 44vw;
 }
+*/
 
 .rul-ned {
     text-align: center;
