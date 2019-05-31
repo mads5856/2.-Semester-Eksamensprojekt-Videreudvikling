@@ -305,6 +305,8 @@ function sortRang() {
 function sortAarstal() {
 
 document.getElementById("sorterBtn").innerHTML = "Sortér efter: " + sortBtn[0];
+    
+    
 
 document.getElementById("sorterNavn").innerHTML = sortBtn[1]
 
