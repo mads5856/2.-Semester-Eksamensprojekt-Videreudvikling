@@ -84,21 +84,19 @@
             <h2 class="tidl-med-header">Pensionerede medarbejdere fra <br>Det Danske Artilleriregiment</h2>
         </div>
         <button id="sorterBtn" onclick="sortOverlay()">
-            Sortér efter: Årstal
-            <img src="../Billeder/sort-arrow.png" alt="Sorteringspil">
+            
+            <img id="sortPic" src="../Billeder/sort-arrow.png" alt="Sorteringspil">
         </button>
         <div id="sorterOverlay">
-            <a href="#">Navn A-Å</a>
-            <br><a href="#">Rang</a>
-            <br><a href="#">Træ Nr.</a>
+            <a onclick="sortNavn()" id="sorterNavn" href="#"></a>
+            <br><a onclick="sortRang()" id="sorterRang" href="#"></a>
+            <br>
+            <a onclick="sortAarstal()" id="sorterAarstal" href="#"></a>
         </div>
 
         <div class="info-person-box">
             <img src="../Billeder/soldat-ikon.png" alt="Billede af medarbejder">
-            <p class="info-person-text">
-                Navn: E. Frandsen
-                <br>Rang: MJ
-                <br>Pensioneret: 30. mar. 1983</p>
+            <p id="boks1" class="info-person-text"></p>
             
             <button class="readMoreBtn" onclick="profil1()">Læs mere...</button> 
             
@@ -106,100 +104,67 @@
 
         <div class="info-person-box">
             <img src="../Billeder/soldat-ikon.png" alt="Billede af medarbejder">
-            <p class="info-person-text">
-                Navn: S.AA Mathiesen
-                <br>Rang: KTBTJ
-                <br>Pensioneret: 30. mar. 1983</p>
+            <p id="boks2" class="info-person-text"></p>
             <button class="readMoreBtn" onclick="profil2()">Læs mere...</button>
         </div>
 
         <div class="info-person-box">
             <img src="../Billeder/soldat-ikon.png" alt="Billede af medarbejder">
-            <p class="info-person-text">
-                Navn: E. Knudsen
-                <br>Rang: MJ
-                <br>Pensioneret: 30. jun. 1983</p>
+            <p id="boks3" class="info-person-text"></p>
             <button class="readMoreBtn" onclick="profil3()">Læs mere...</button>
         </div>
 
         <div class="info-person-box">
             <img src="../Billeder/soldat-ikon.png" alt="Billede af medarbejder">
-            <p class="info-person-text">
-                Navn: S.AA. Kristensen
-                <br>Rang: KN
-                <br>Pensioneret: 30. okt. 1983</p>
+            <p id="boks4" class="info-person-text"></p>
             <button class="readMoreBtn">Læs mere...</button>
         </div>
 
         <div class="info-person-box">
             <img src="../Billeder/soldat-ikon.png" alt="Billede af medarbejder">
-            <p class="info-person-text">
-                Navn: E. Mogensen
-                <br>Rang: OL
-                <br>Pensioneret: 31. aug. 1984</p>
+            <p id="boks5" class="info-person-text"></p>
             <button class="readMoreBtn">Læs mere...</button>
         </div>
 
         <div class="info-person-box">
             <img src="../Billeder/soldat-ikon.png" alt="Billede af medarbejder">
-            <p class="info-person-text">
-                Navn: E.F. Nielsen
-                <br>Rang: MJ
-                <br>Pensioneret: 31. aug. 1984</p>
+            <p id="boks6" class="info-person-text"></p>
             <button class="readMoreBtn">Læs mere...</button>
         </div>
 
         <div class="info-person-box">
             <img src="../Billeder/soldat-ikon.png" alt="Billede af medarbejder">
-            <p class="info-person-text">
-                Navn: K.AA. Christiansen
-                <br>Rang: KN
-                <br>Pensioneret: 31. dec. 1984</p>
+            <p id="boks7" class="info-person-text"></p>
             <button class="readMoreBtn">Læs mere...</button>
         </div>
 
         <div class="info-person-box">
             <img src="../Billeder/soldat-ikon.png" alt="Billede af medarbejder">
-            <p class="info-person-text">
-                Navn: E.V. Tomsen
-                <br>Rang: DEPARB
-                <br>Pensioneret: 28. feb. 1985</p>
+            <p id="boks8" class="info-person-text"></p>
             <button class="readMoreBtn">Læs mere...</button>
         </div>
 
         <div class="info-person-box">
             <img src="../Billeder/soldat-ikon.png" alt="Billede af medarbejder">
-            <p class="info-person-text">
-                Navn: S.A.M. Nielsen
-                <br>Rang: MJ
-                <br>Pensioneret: 30. sep. 1985</p>
+            <p id="boks9" class="info-person-text"></p>
             <button class="readMoreBtn">Læs mere...</button>
         </div>
 
         <div class="info-person-box">
             <img src="../Billeder/soldat-ikon.png" alt="Billede af medarbejder">
-            <p class="info-person-text">
-                Navn: O.E. Jacobsen
-                <br>Rang: KN
-                <br>Pensioneret: 31. maj 1986</p>
+            <p id="boks10" class="info-person-text"></p>
             <button class="readMoreBtn">Læs mere...</button>
         </div>
 
         <div class="info-person-box">
             <img src="../Billeder/soldat-ikon.png" alt="Billede af medarbejder">
-            <p class="info-person-text">
-                Navn: H.L.N. Olesen
-                <br>Rang: MJ
-                <br>Pensioneret: 30. apr. 1987</p>
+            <p id="boks11" class="info-person-text"></p>
             <button class="readMoreBtn">Læs mere...</button>
         </div>
 
         <div class="info-person-box">
             <img src="../Billeder/soldat-ikon.png" alt="Billede af medarbejder">
-            <p class="info-person-text">
-                Navn: R. Kappel-Hansen
-                <br>Rang: KN
-                <br>Pensioneret: 31. aug. 1987</p>
+            <p id="boks12" class="info-person-text"></p>
             <button class="readMoreBtn">Læs mere...</button>
         </div>
         <br><br><br>
