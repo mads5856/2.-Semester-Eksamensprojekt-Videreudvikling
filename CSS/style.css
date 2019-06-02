@@ -726,8 +726,6 @@ html {
     cursor: pointer;
 }
 
-
-
 /*Kode til skalerbarhed af ipad og mobil*/
 
 
@@ -748,7 +746,7 @@ html {
     .search {
         visibility: hidden;
     }
-    .map {
+    svg {
         display: none;
     }
     .om-os-aktiv {
