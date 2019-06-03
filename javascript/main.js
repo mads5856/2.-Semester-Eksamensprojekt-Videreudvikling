@@ -164,12 +164,12 @@ let first_click_forside = true;
 
 function treeHighlight() {
     if (first_click_forside) {
-    document.getElementById("tree1").style.fill = "red";
+    document.getElementById("tree1").style.fill = "#c8102e";
         
     first_click_forside = false;
     }
     else {
-    document.getElementById("tree2").style.fill = "red";
+    document.getElementById("tree2").style.fill = "#c8102e";
     document.getElementById("tree1").style.fill = "5F984C";
     }
 }
